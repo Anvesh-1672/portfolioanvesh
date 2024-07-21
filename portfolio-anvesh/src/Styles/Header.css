@@ -1,0 +1,19 @@
+/* Hide the offcanvas initially on larger screens */
+.offcanvas {
+    display: none;
+}
+
+/* Show the offcanvas when toggled on mobile screens */
+@media (max-width: 992px) {
+    .collapse {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .offcanvas {
+        display: block;
+    }
+}
