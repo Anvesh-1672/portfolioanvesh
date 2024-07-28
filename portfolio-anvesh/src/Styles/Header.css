@@ -1,7 +1,25 @@
+.he {
+    background: url("../../public/assets/background.svg");
+}
 
-.nav{
-    font-size: 19px;
-    color: #fff;
-    height: 95px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+.fg p{
+    color: #000000;
+    font-size: 25px;
+}
+
+a{
+    font-size: 20px;
+}
+.offcanvas-body .nav-item a {
+    background-color: #0055ff;
+    color: white;
+    font-size: medium;
+    padding: 10px 15px;
+}
+
+@media (max-width: 768px) {
+    .offcanvas-body .nav-item a {
+        font-size: small;
+        padding: 8px 10px;
+    }
 }
