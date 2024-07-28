@@ -1,0 +1,9 @@
+.bmg {
+    background: url("../../public/assets/background.svg") ;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+}
+.box{
+    color:black ;
+}
