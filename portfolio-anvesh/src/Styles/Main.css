@@ -1,9 +1,49 @@
 .bmg {
-    background: url("../../public/assets/background.svg") ;
-    background-size: cover;
-    display: flex;
+    background-image: linear-gradient(to right bottom, #050b30, #003656, #005e66, #398464, #95a564);
     height: 100vh;
+
 }
+/* .bc{
+    position: absolute;
+    top: 150px;
+    left: 200px;
+} */
+ .bc{
+    margin-top: 40px;
+ }
+
 .box{
-    color:black ;
+    color:#fff ;
+  
 }
+
+.typing-animation {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden; /* Ensures the text does not overflow */
+    border-right: 5px solid #fff; /* Creates the cursor effect */
+    animation: typing 4s steps(30, end) infinite, blink-caret 0.75s step-end infinite; /* Adjust timing as needed */
+    vertical-align: bottom; /* Align with other text */
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 70%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
+  }
+  .bv{
+    width: 50%;
+    height: 250px;
+  }
+
+  .img-small {
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height to maintain aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Thick shadow */
+    border: 10px solid #fff; /* White border with 10px thickness */
+  }
