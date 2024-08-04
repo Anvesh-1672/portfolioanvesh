@@ -1,17 +1,14 @@
-.he {
-    background: url("../../public/assets/background.svg");
-}
 
-.fg p{
+.fg p {
     color: #000000;
     font-size: 25px;
 }
 
-a{
+a {
     font-size: 20px;
 }
+
 .offcanvas-body .nav-item a {
-    background-color: #0055ff;
     color: white;
     font-size: medium;
     padding: 10px 15px;
@@ -22,4 +19,15 @@ a{
         font-size: small;
         padding: 8px 10px;
     }
+
+    .navbar-toggler {
+        display: block; /* Show toggle button on small screens */
+    }
 }
+
+@media (min-width: 769px) {
+    .navbar-toggler {
+        display: none; /* Hide toggle button on large screens */
+    }
+}
+
