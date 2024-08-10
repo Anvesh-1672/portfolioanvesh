@@ -16,7 +16,7 @@ a {
 
 @media (max-width: 768px) {
     .offcanvas-body .nav-item a {
-        font-size: small;
+        font-size: medium;
         padding: 8px 10px;
     }
 
