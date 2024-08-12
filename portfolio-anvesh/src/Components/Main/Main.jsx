@@ -10,6 +10,9 @@ export const Main = () => {
     const handleAboutClick = () => {
         navigate('/about');
     };
+    const handleProjectClick=()=>{
+        navigate('/project');
+    }
 
     return (
         <div className="bmg">
@@ -27,7 +30,7 @@ export const Main = () => {
                         <p className='justify-content' style={{color:'#fff'}}>Full Stack Developer dedicated to crafting innovative web solutions, enhancing user experiences, and staying updated with industry advancements.</p>
                         <div className='d-flex mt-4' style={{gap:'50px'}}>
                             <Button variant="outlined" style={{color:'#fff', fontWeight:'bold', borderColor:'#fff'}} onClick={handleAboutClick}>About Me</Button>
-                            <Button variant="outlined" style={{color:'#fff', fontWeight:'bold', borderColor:'#fff'}}>Projects</Button>
+                            <Button variant="outlined" style={{color:'#fff', fontWeight:'bold', borderColor:'#fff'}}onClick={handleProjectClick}>Projects</Button>
                         </div>
                     </div>
                 </div>

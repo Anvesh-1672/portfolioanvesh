@@ -1,0 +1,6 @@
+.bgpr{
+    width: 100%;
+    background-image: linear-gradient(to right bottom, #050b30, #003656, #005e66, #398464, #95a564);
+    align-items: center;
+    justify-content: center;
+}

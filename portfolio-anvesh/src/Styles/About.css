@@ -1,0 +1,57 @@
+.bga {
+    width: 100%;
+
+    background-image: linear-gradient(to right bottom, #050b30, #003656, #005e66, #398464, #95a564);
+    align-items: center;
+    justify-content: center;
+}
+
+.sfv {
+    background-color: white;
+    width: 60%;
+    padding: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 auto;
+    border: 5px solid #95a564;
+}
+
+.im {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    max-height: 270px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+    .sfv {
+        width: 90%;
+    }
+
+    .im {
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+
+.skill-icon {
+    width: 70px; 
+    height: 70px; 
+    margin: 10px; 
+}
+.skill-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+
+@media (max-width: 768px) {
+    .skill-icon {
+        width: 40px; 
+        height: 40px;
+    }
+}
+
