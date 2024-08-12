@@ -1,9 +1,25 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import '../../Styles/Header.css'; // Custom CSS file
+import '../../Styles/Header.css'; 
+import { useNavigate } from 'react-router-dom';
+
+
 
 export const Header = () => {
+
+    const navigate = useNavigate();
+
+    const handleHome=()=>{
+        navigate('/');
+    }
+
+    const hanadleAbout=()=>{
+        navigate('/about');
+    }
+    const handleProject=()=>{
+        navigate('/project');
+    }
     return (
         <nav className="navbar navbar-dark  he">
             <div className="container-fluid fg">
@@ -17,13 +33,13 @@ export const Header = () => {
                 <div className="d-none d-lg-flex flex-grow-1">
                     <ul className="navbar-nav flex-row ms-auto">
                         <li className="nav-item ms-3">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            <a className="nav-link active" aria-current="page" href="#" onClick={handleHome} >Home</a>
                         </li>
                         <li className="nav-item ms-3">
-                            <a className="nav-link active" aria-current="page" href="#">About Me</a>
+                            <a className="nav-link active" aria-current="page" href="#" onClick={hanadleAbout}>About Me</a>
                         </li>
                         <li className="nav-item ms-3">
-                            <a className="nav-link active" aria-current="page" href="#">Projects</a>
+                            <a className="nav-link active" aria-current="page" href="#" onClick={handleProject}>Projects</a>
                         </li>
                     </ul>
                 </div>
@@ -35,13 +51,13 @@ export const Header = () => {
                     <div className="offcanvas-body ">
                         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                <a className="nav-link active" aria-current="page" href="#"  onClick={handleHome}>Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">About Me</a>
+                                <a className="nav-link active" aria-current="page" href="#"  onClick={hanadleAbout}>About Me</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Projects</a>
+                                <a className="nav-link active" aria-current="page" href="#" onClick={handleProject}>Projects</a>
                             </li>
                         </ul>
                     </div>
